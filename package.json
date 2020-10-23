@@ -1,0 +1,18 @@
+{
+  "name": "todocustom",
+  "version": "1.0.0",
+  "description": "Todo App using MERN Stack",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "npm run start --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Saud",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28"
+  }
+}
